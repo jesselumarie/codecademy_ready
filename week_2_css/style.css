@@ -1,0 +1,14 @@
+#newspaperName {
+  font-size: 64px;
+}
+.articleText {
+  font-size: 10px;
+}
+
+.headlineImage {
+  width: 500px;
+}
+
+.theBigStory.articleText {
+  color: blue;
+}
