@@ -1,0 +1,49 @@
+html, body, p{
+  margin: 0;
+}
+
+div {
+  border-radius: 50%;
+}
+
+.one {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three {
+  width: 50%;
+  height: 50%;
+  background-color: indigo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four {
+  width: 50%;
+  height: 50%;
+  background-color: violet;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+div:hover{
+  filter: sepia(10%);
+}
