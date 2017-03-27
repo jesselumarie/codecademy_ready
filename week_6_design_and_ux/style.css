@@ -1,0 +1,54 @@
+html {
+  font-family: "Futura";
+  perspective: 1500px;
+}
+
+.flipContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.flippingContainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+.flippingContainer:hover {
+  transform: rotateY(180deg);
+}
+
+.flipFront, .flipBack {
+  width: 100%;
+  height: 100%;
+  background-color:#B0C4DE;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.flipFront {
+  transform: rotateY(0deg);
+}
+
+.flipBack {
+  transform: rotateY(180deg);
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.flipBack img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
